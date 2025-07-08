@@ -1,87 +1,76 @@
-print(10 + 5)
-print(10 - 5)
-print(10 * 5)
-print(10 / 5)
-print(10 // 5)
-print(10 % 5)
-print(10 ** 5)
-print(10 + 5 * 2)  # Operator precedence
-print((10 + 5) * 2)  # Parentheses to change precedence
-print(10 + 5 - 2 * 3)  # Mixed operations
-print(10 + 5 * (2 - 3))  # Parentheses to change
-# precedence
-print(10 + 5 * 2 - 3)  # More complex expression
-print(10 + (5 * 2) - 3)  # Parentheses to
-# clarify precedence
-print(10 + 5 * 2 - (3 + 1))  # Parentheses to
-# clarify precedence    
-print(10 + 5 * (2 - (3 + 1)))  # Nested parentheses
-print(10 + (5 * 2) - (3 + 1))  #
-# Parentheses to clarify precedence
-print(10 + 5 * 2 - (3 + (1 - 2)))  # More complex expression with nested parentheses
-print(10 + (5 * 2) - (3 + (1 - 2)))  # Parentheses to clarify precedence
-print(10 + 5 * (2 - (3 + (1 - 2))))  # Nested parentheses with more complexity
-print(10 + (5 * 2) - (3 + (1 - 2)))  # Parentheses to clarify precedence
-print(10 + 5 * 2 - (3 + (1 - 2)))  # More complex expression with nested parentheses
-print(10 + (5 * 2) - (3 + (1 - 2)))  # Parentheses to clarify precedence
-print(10 + 5 * (2 - (3 + (1 - 2))))  # Nested parentheses with more complexity
-print(10 + (5 * 2) - (3 + (1 - 2)))  # Parentheses to clarify precedence
-print(10 + 5 * 2 - (3 + (1 - 2)))  # More complex expression with nested parentheses
-print(10 + (5 * 2) - (3 + (1 - 2)))  # Parentheses to clarify precedence    
+"""
+python_operators.py
+Demonstrates Python's arithmetic, comparison, logical, identity, membership, bitwise, and assignment operators with examples.
+"""
 
-print(10 + 5 * (2 - (3 + (1 - 2))))  # Nested parentheses with more complexity
-print(10 + (5 * 2) - (3 + (1 - 2)))  # Parentheses to clarify precedence
-print(10 + 5 * 2 - (3 + (1 - 2)))  # More complex expression with nested parentheses
-print(10 + (5 * 2) - (3 + (1 - 2)))  # Parentheses to clarify precedence
-print(10 + 5 * (2 - (3 + (1 - 2))))  # Nested parentheses with more complexity
-print(10 + (5 * 2) - (3 + (1 - 2)))  # Parentheses to clarify precedence
-print(10 + 5 * 2 - (3 + (1 - 2)))  # More complex expression with nested parentheses
-print(10 + (5 * 2) - (3 + (1 - 2)))  # Parentheses to clarify precedence
-print(10 + 5 * (2 - (3 + (1 - 2))))  # Nested parentheses with more complexity
-print(10 + (5 * 2) - (3 + (1 - 2)))  # Parentheses to clarify precedence
-print(10 + 5 * 2 - (3 + (1 - 2)))  # More complex expression with nested parentheses
-print(10 + (5 * 2) - (3 + (1 - 2)))  # Parentheses to clarify precedence
-print(10 + 5 * (2 - (3 + (1 - 2))))  # Nested parentheses with more complexity
-print(10 + (5 * 2) - (3 + (1 - 2)))  # Parentheses to clarify precedence
+def main():
+    # Arithmetic Operators
+    print("Addition:", 10 + 5)
+    print("Subtraction:", 10 - 5)
+    print("Multiplication:", 10 * 5)
+    print("Division:", 10 / 5)
+    print("Floor Division:", 10 // 5)
+    print("Modulus:", 10 % 5)
+    print("Exponentiation:", 10 ** 5)
+    print("Operator precedence (10 + 5 * 2):", 10 + 5 * 2)
+    print("Parentheses change precedence ((10 + 5) * 2):", (10 + 5) * 2)
+    print("Mixed operations (10 + 5 - 2 * 3):", 10 + 5 - 2 * 3)
 
+    # Complex expressions with parentheses
+    print("10 + 5 * (2 - 3):", 10 + 5 * (2 - 3))
+    print("10 + 5 * 2 - 3:", 10 + 5 * 2 - 3)
+    print("10 + (5 * 2) - 3:", 10 + (5 * 2) - 3)
+    print("10 + 5 * 2 - (3 + 1):", 10 + 5 * 2 - (3 + 1))
+    print("10 + 5 * (2 - (3 + 1)):", 10 + 5 * (2 - (3 + 1)))
+    print("10 + (5 * 2) - (3 + 1):", 10 + (5 * 2) - (3 + 1))
+    print("10 + 5 * 2 - (3 + (1 - 2)):", 10 + 5 * 2 - (3 + (1 - 2)))
+    print("10 + (5 * 2) - (3 + (1 - 2)):", 10 + (5 * 2) - (3 + (1 - 2)))
+    print("10 + 5 * (2 - (3 + (1 - 2))):", 10 + 5 * (2 - (3 + (1 - 2))))
 
-# Comparison Operators
-print(10 == 5)  # Equal to
-print(10 != 5)  # Not equal to
-print(10 > 5)  # Greater than
-print(10 < 5)  # Less than
-print(10 >= 5)  # Greater than or equal to  
-print(10 <= 5)  # Less than or equal to
-# Logical Operators
-print(10 > 5 and 5 < 10)  # Logical AND     
-print(10 > 5 or 5 < 10)  # Logical OR
-print(not(10 > 5))  # Logical NOT   
-# Identity Operators
-x = [1, 2, 3]
-y = [1, 2, 3]
-print(x is y)  # Identity (is)
-print(x is not y)  # Identity (is not)
-# Membership Operators
-x = [1, 2, 3]
-print(1 in x)  # Membership (in)
-print(4 not in x)  # Membership (not in)
-# Bitwise Operators
-x = 5  # 0101 in binary
-y = 3  # 0011 in binary
-print(x & y)  # Bitwise AND
-print(x | y)  # Bitwise OR
-print(x ^ y)  # Bitwise XOR
-print(~x)  # Bitwise NOT
-print(x << 1)  # Bitwise left shift
-print(x >> 1)  # Bitwise right shift
-# Assignment Operators
-x = 5
-x += 3  # Add and assign
-print(x)  # Output: 8
-x -= 2  # Subtract and assign
-print(x)  # Output: 6
-x *= 2  # Multiply and assign
-print(x)  # Output: 12
-x /= 3  # Divide and assign
-print(x)  # Output: 4.0
+    # Comparison Operators
+    print("10 == 5:", 10 == 5)
+    print("10 != 5:", 10 != 5)
+    print("10 > 5:", 10 > 5)
+    print("10 < 5:", 10 < 5)
+    print("10 >= 5:", 10 >= 5)
+    print("10 <= 5:", 10 <= 5)
+
+    # Logical Operators
+    print("10 > 5 and 5 < 10:", 10 > 5 and 5 < 10)
+    print("10 > 5 or 5 < 10:", 10 > 5 or 5 < 10)
+    print("not(10 > 5):", not(10 > 5))
+
+    # Identity Operators
+    x = [1, 2, 3]
+    y = [1, 2, 3]
+    print("x is y:", x is y)
+    print("x is not y:", x is not y)
+
+    # Membership Operators
+    print("1 in x:", 1 in x)
+    print("4 not in x:", 4 not in x)
+
+    # Bitwise Operators
+    x = 5  # 0101 in binary
+    y = 3  # 0011 in binary
+    print("Bitwise AND (x & y):", x & y)
+    print("Bitwise OR (x | y):", x | y)
+    print("Bitwise XOR (x ^ y):", x ^ y)
+    print("Bitwise NOT (~x):", ~x)
+    print("Bitwise left shift (x << 1):", x << 1)
+    print("Bitwise right shift (x >> 1):", x >> 1)
+
+    # Assignment Operators
+    x = 5
+    x += 3
+    print("x after x += 3:", x)
+    x -= 2
+    print("x after x -= 2:", x)
+    x *= 2
+    print("x after x *= 2:", x)
+    x /= 3
+    print("x after x /= 3:", x)
+
+if __name__ == "__main__":
+    main()
 

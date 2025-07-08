@@ -1,47 +1,50 @@
-x= "Hello, World!"
+"""
+string_methods.py
+Demonstrates various string methods in Python with examples and explanations.
+"""
 
-# String Methods
-print(x.upper())  # Convert to uppercase
-print(x.lower())  # Convert to lowercase
-print(x.strip())  # Remove whitespace
-print(x.split(","))  # Split into a list
-print(x.replace("World", "Python"))  # Replace a substring      
-print(x.startswith("Hello"))  # Check if string starts with "Hello"
-print(x.endswith("!"))  # Check if string ends with "!"
-print(x.find("World"))  # Find the position of "World"
-print(x.count("o"))  # Count occurrences of "o"         
+def main():
+    x = "Hello, World!"
+    print(f"Original string: {x}\n")
 
-print(x.isalpha())  # Check if all characters are alphabetic
-print(x.isdigit())  # Check if all characters are digits
-print(x.isalnum())  # Check if all characters are alphanumeric
-print(x.islower())  # Check if all characters are lowercase
-print(x.isupper())  # Check if all characters are uppercase
-print(x.isspace())  # Check if all characters are whitespace
-print(x.capitalize())  # Capitalize the first character
-print(x.title())  # Convert to title case
+    # Basic string transformations
+    print("Uppercase:", x.upper())
+    print("Lowercase:", x.lower())
+    print("Stripped:", x.strip())
+    print("Split by comma:", x.split(","))
+    print("Replace 'World' with 'Python':", x.replace("World", "Python"))
+    print("Starts with 'Hello':", x.startswith("Hello"))
+    print("Ends with '!':", x.endswith("!"))
+    print("Find 'World':", x.find("World"))
+    print("Count of 'o':", x.count("o"))
 
-print(x.swapcase())  # Swap case of all characters
-print(x.center(50, '*'))  # Center the string with '*' padding  
-print(x.ljust(50, '-'))  # Left justify the string with '-' padding
-print(x.rjust(50, '-'))  # Right justify the string with '-' padding
-print(x.zfill(20))  # Pad the string with zeros on the left
-print(x.partition("World"))  # Partition the string at "World"
-print(x.rpartition("World"))  # Right partition the string at "World"
-print(x.splitlines())  # Split the string into lines
-print(x.join(["Start: ", " :End"]))  # Join a list with the string as a separator
-print(x.removeprefix("Hello, "))  # Remove prefix "Hello, "
-print(x.removesuffix("!"))  # Remove suffix "!"
-print(x.casefold())  # Casefold the string for case-insensitive comparisons
+    # String property checks
+    print("Is alpha:", x.isalpha())
+    print("Is digit:", x.isdigit())
+    print("Is alphanumeric:", x.isalnum())
+    print("Is lowercase:", x.islower())
+    print("Is uppercase:", x.isupper())
+    print("Is whitespace:", x.isspace())
+    print("Capitalize:", x.capitalize())
+    print("Title case:", x.title())
+    print("Swap case:", x.swapcase())
+    print("Center (width 50, '*'):", x.center(50, '*'))
+    print("Left justify (width 50, '-'):", x.ljust(50, '-'))
+    print("Right justify (width 50, '-'):", x.rjust(50, '-'))
+    print("Zero fill (width 20):", x.zfill(20))
+    print("Partition at 'World':", x.partition("World"))
+    print("Right partition at 'World':", x.rpartition("World"))
+    print("Split lines:", x.splitlines())
+    print("Join with separator:", x.join(["Start: ", " :End"]))
+    print("Remove prefix 'Hello, ':", x.removeprefix("Hello, "))
+    print("Remove suffix '!':", x.removesuffix("!"))
+    print("Casefold:", x.casefold())
+    print("Is printable:", x.isprintable())
+    print("Is identifier:", x.isidentifier())
+    print("Is ASCII:", x.isascii())
+    print("Is title:", x.istitle())
+    print("Is numeric:", x.isnumeric())
+    print("Is decimal:", x.isdecimal())
 
-# Check if the string is printable
-print(x.isprintable())  # Check if all characters are printable
-# Check if the string is a valid identifier
-print(x.isidentifier())  # Check if the string is a valid identifier
-# Check if the string is a valid ASCII string
-print(x.isascii())  # Check if all characters are ASCII
-# Check if the string is a valid title
-print(x.istitle())  # Check if the string is in title case  
-# Check if the string is a valid numeric string
-print(x.isnumeric())  # Check if all characters are numeric
-# Check if the string is a valid decimal string
-print(x.isdecimal())  # Check if all characters are decimal
+if __name__ == "__main__":
+    main()
